@@ -68,3 +68,4 @@ $RECYCLE.BIN/
 # 生成したPDFとテキストのアウトプット
 *.pdf
 *.txt
+!readpdf/test-integrity.pdf

@@ -28,3 +28,10 @@ func TestIsPdf(t *testing.T) {
 		t.Errorf("b.jpg が PDFに見えたっぽい")
 	}
 }
+
+func TestReadContentPdf(t *testing.T) {
+	got := ReadContentPdf("test-integrity.pdf")
+	if got != nil {
+		t.Errorf("ファイル読み込みでエラー発生")
+	}
+}
